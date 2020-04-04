@@ -1,6 +1,14 @@
-const getAll = async () => {
-  // TODO: mock implementation. should be replaced during task development
-  return [];
+const allUsers = require('./users.json');
+
+const getAll = () => {
+  return allUsers;
 };
 
-module.exports = { getAll };
+const addUser = newUser => {
+  console.log(newUser);
+  console.log(JSON.stringify(newUser));
+  allUsers.push(newUser);
+  console.log(allUsers);
+};
+
+module.exports = { getAll, addUser };
