@@ -6,6 +6,8 @@ const getAll = () => usersRepo.getAll();
 
 const addUser = newUser => usersRepo.addUser(newUser);
 
+const findUser = id => usersRepo.findUser(id);
+
 const validateUser = input => {
   const schema = Joi.object({
     name: Joi.string().required(),
@@ -13,10 +15,13 @@ const validateUser = input => {
     password: Joi.string().required()
   });
   const result = schema.validate(input);
+  if (result.error) {
+    throw new Error('wrong data input');
+  }
   return !result.error;
 };
 
-module.exports = { getAll, validateUser, addUser };
+module.exports = { getAll, validateUser, addUser, findUser };
 
 // exports.createUser = (reqBody, users) => {
 //   console.log('in val 1');

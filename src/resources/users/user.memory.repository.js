@@ -5,10 +5,15 @@ const getAll = () => {
 };
 
 const addUser = newUser => {
-  console.log(newUser);
-  console.log(JSON.stringify(newUser));
   allUsers.push(newUser);
   console.log(allUsers);
 };
 
-module.exports = { getAll, addUser };
+const findUser = id => {
+  console.log(allUsers);
+  const result = allUsers.find(item => item.id === id);
+  console.log(result);
+  return result === undefined ? new Error('no such user') : result;
+};
+
+module.exports = { getAll, addUser, findUser };
