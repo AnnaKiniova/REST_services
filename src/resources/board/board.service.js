@@ -10,6 +10,21 @@ const createBoard = async boardData => {
     return await boardRepo.addBoard(newBoard);
   }
 };
+
+const getBoardById = async id => {
+  return await boardRepo.getBoardById(id);
+};
+
+const updateBoard = async (id, boardData) => {
+  if (validateData(boardData)) {
+    return await boardRepo.updateBoard(id, boardData);
+  }
+};
+
+const deleteBoard = async id => {
+  return await boardRepo.deleteBoard(id);
+};
+
 const validateData = input => {
   const schema = Joi.object({
     id: Joi.string(),
@@ -23,20 +38,10 @@ const validateData = input => {
   return !result.error;
 };
 
-module.exports = { getAll, createBoard };
-
-// const createUser = async userData => {
-//   if (validateUser(userData)) {
-//     const newUser = new User(userData);
-//     return await usersRepo.addUser(newUser);
-//   }
-// };
-// const getUserById = async id => await usersRepo.getUserById(id);
-
-// const updateUser = async (id, userData) => {
-//   if (validateUser(userData)) {
-//     return await usersRepo.updateUser(id, userData);
-//   }
-// };
-
-// const deleteUser = async id => usersRepo.deleteUser(id);
+module.exports = {
+  getAll,
+  createBoard,
+  getBoardById,
+  updateBoard,
+  deleteBoard
+};

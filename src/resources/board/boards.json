@@ -1,5 +1,5 @@
 [{
-    "id": "id 1",
+    "id": "id1",
     "title": "title 1",
     "columns": [{
         "id": "column  id 1",
@@ -7,7 +7,7 @@
         "order": 0
     }]
 }, {
-    "id": "id 2",
+    "id": "id2",
     "title": "title 2",
     "columns": [{
         "id": "column  id 21",
