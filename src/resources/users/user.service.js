@@ -30,7 +30,7 @@ const validateUser = input => {
   });
   const result = schema.validate(input);
   if (result.error) {
-    throw new Error({ message: 'wrong data input' });
+    throw new Error({ message: 'invalid data provided' });
   }
   return !result.error;
 };
