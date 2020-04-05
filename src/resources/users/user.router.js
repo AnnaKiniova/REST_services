@@ -10,26 +10,32 @@ router
   })
   .post(async (req, res) => {
     try {
-      if (usersService.validateUser(req.body)) {
-        const newUser = new User(req.body);
-        await usersService.addUser(newUser);
-        res.status(200).json(User.toResponse(newUser));
-      }
+      const newUser = await usersService.createUser(req.body);
+      res.status(200).json(User.toResponse(newUser));
     } catch (e) {
       console.log(e);
       res.status(400).json(e);
     }
   });
 
-router.route('/:id').get(async (req, res) => {
-  console.log('in id route');
-  try {
-    const userFind = await usersService.findUser(req.params.id);
-    console.log(`id: ${req.params.id}`);
-    res.json(userFind);
-  } catch (e) {
-    console.log(e);
-    res.status(400).json(e);
-  }
-});
+router
+  .route('/:id')
+  .get(async (req, res) => {
+    try {
+      const userFind = await usersService.getUserById(req.params.id);
+      res.status(200).json(User.toResponse(userFind));
+    } catch (e) {
+      console.log(e);
+      res.status(400).json(e);
+    }
+  })
+  .put(async (req, res) => {
+    const updatedUser = await usersService.updateUser(req.params.id, req.body);
+    res.status(200).json(User.toResponse(updatedUser));
+  })
+
+  .delete(async (req, res) => {
+    await usersService.deleteUser(req.params.id);
+    res.status(204);
+  });
 module.exports = router;

@@ -1,12 +1,27 @@
 const Joi = require('joi');
 
 const usersRepo = require('./user.memory.repository');
+const User = require('./user.model');
 
 const getAll = () => usersRepo.getAll();
 
-const addUser = newUser => usersRepo.addUser(newUser);
+// const addUser = newUser => usersRepo.addUser(newUser);
 
-const findUser = id => usersRepo.findUser(id);
+const createUser = async userData => {
+  if (validateUser(userData)) {
+    const newUser = new User(userData);
+    return await usersRepo.addUser(newUser);
+  }
+};
+const getUserById = async id => await usersRepo.getUserById(id);
+
+const updateUser = async (id, userData) => {
+  if (validateUser(userData)) {
+    return await usersRepo.updateUser(id, userData);
+  }
+};
+
+const deleteUser = id => usersRepo.deleteUser(id);
 
 const validateUser = input => {
   const schema = Joi.object({
@@ -21,18 +36,11 @@ const validateUser = input => {
   return !result.error;
 };
 
-module.exports = { getAll, validateUser, addUser, findUser };
-
-// exports.createUser = (reqBody, users) => {
-//   console.log('in val 1');
-//   console.log(reqBody, users);
-//   if (validateData(reqBody)) {
-//     console.log('in val 2');
-//     const newUser = reqBody;
-//     newUser.id = getId(users);
-//     users.push(newUser);
-//     console.log(users);
-//     return true;
-//   }
-//   return false;
-// };
+module.exports = {
+  getAll,
+  validateUser,
+  getUserById,
+  updateUser,
+  createUser,
+  deleteUser
+};
