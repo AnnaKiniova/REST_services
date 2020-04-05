@@ -34,7 +34,7 @@ const getUserById = async id => {
   // console.log(allUsers);
   const result = await allUsers.find(item => item.id === id);
   // console.log(result);
-  return !result ? new Error('no such user') : result;
+  return !result ? new Error({ message: 'no such user' }) : result;
 };
 
 const updateUser = async (id, userData) => {

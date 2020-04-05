@@ -5,8 +5,12 @@ const usersService = require('./user.service');
 router
   .route('/')
   .get(async (req, res) => {
-    const allUsers = await usersService.getAll();
-    res.json(allUsers.map(User.toResponse));
+    try {
+      const allUsers = await usersService.getAll();
+      res.json(allUsers.map(User.toResponse));
+    } catch (e) {
+      res.status(404).end(e);
+    }
   })
   .post(async (req, res) => {
     try {
@@ -14,7 +18,7 @@ router
       res.status(200).json(User.toResponse(newUser));
     } catch (e) {
       console.log(e);
-      res.status(400).json(e);
+      res.status(400).end(e);
     }
   });
 
@@ -30,12 +34,24 @@ router
     }
   })
   .put(async (req, res) => {
-    const updatedUser = await usersService.updateUser(req.params.id, req.body);
-    res.status(200).json(User.toResponse(updatedUser));
+    try {
+      const updatedUser = await usersService.updateUser(
+        req.params.id,
+        req.body
+      );
+      res.status(200).json(User.toResponse(updatedUser));
+    } catch (e) {
+      console.log(e);
+      res.status(400).json(e);
+    }
   })
 
   .delete(async (req, res) => {
-    await usersService.deleteUser(req.params.id);
-    res.status(204).end();
+    try {
+      await usersService.deleteUser(req.params.id);
+      res.status(204).end();
+    } catch (e) {
+      res.status(404).end(e);
+    }
   });
 module.exports = router;
