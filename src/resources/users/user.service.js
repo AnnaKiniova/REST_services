@@ -5,8 +5,6 @@ const User = require('./user.model');
 
 const getAll = () => usersRepo.getAll();
 
-// const addUser = newUser => usersRepo.addUser(newUser);
-
 const createUser = async userData => {
   if (validateUser(userData)) {
     const newUser = new User(userData);
@@ -21,10 +19,11 @@ const updateUser = async (id, userData) => {
   }
 };
 
-const deleteUser = id => usersRepo.deleteUser(id);
+const deleteUser = async id => usersRepo.deleteUser(id);
 
 const validateUser = input => {
   const schema = Joi.object({
+    id: Joi.string(),
     name: Joi.string().required(),
     login: Joi.string().required(),
     password: Joi.string().required()

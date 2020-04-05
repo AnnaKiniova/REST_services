@@ -38,22 +38,18 @@ const getUserById = async id => {
 };
 
 const updateUser = async (id, userData) => {
-  console.log(id);
-  const result = allUsers[0];
-  console.log(Object.assign(result, userData));
-  Object.assign(result, userData);
-
-  // const userToUpdate = await findUser(id);
-  // console.log(userToUpdate);
-  // Object.assign(userToUpdate, userData);
-  // console.log(userToUpdate);
-  // return userToUpdate;
-  // Object.assign(result, userData);
-  console.log(Object.assign(result, userData));
-  return Object.assign(result, userData);
+  const updatedUser = await getUserById(id);
+  console.log(updatedUser);
+  Object.assign(updatedUser, userData);
+  console.log(Object.assign(updatedUser, userData));
+  return updatedUser;
 };
 
 const deleteUser = async id => {
+  await getUserById(id);
+  allUsers.splice(id - 1, 1);
   console.log(id);
+  console.log(allUsers);
+  // return;
 };
 module.exports = { getAll, addUser, getUserById, updateUser, deleteUser };

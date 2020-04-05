@@ -36,6 +36,6 @@ router
 
   .delete(async (req, res) => {
     await usersService.deleteUser(req.params.id);
-    res.status(204);
+    res.status(204).end();
   });
 module.exports = router;
