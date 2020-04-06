@@ -10,7 +10,7 @@ const addBoard = async newBoard => {
 };
 
 const getBoardById = async id => {
-  return allBoards.find(item => item.id === id);
+  return await allBoards.find(item => item.id === id);
   // return !result ? new Error({ message: 'no user found' }) : result;
 };
 const updateBoard = async (id, boardData) => {
@@ -20,7 +20,7 @@ const updateBoard = async (id, boardData) => {
 };
 
 const deleteBoard = id => {
-  const index = allBoards.indexOf(item => item.id === id);
+  const index = allBoards.findIndex(item => item.id === id);
   if (index !== -1) {
     allBoards.splice(index, 1);
     console.log(allBoards);
