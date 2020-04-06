@@ -30,7 +30,11 @@ router
   .route('/:id')
   .get(async (req, res) => {
     const board = await boardService.getBoardById(req.params.id);
-    res.status(200).json(board);
+    if (board) {
+      res.status(200).json(board);
+    } else {
+      res.status(404).end();
+    }
   })
   .put(async (req, res) => {
     const newBoard = await boardService.updateBoard(req.params.id, req.body);

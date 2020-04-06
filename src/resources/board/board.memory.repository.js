@@ -9,10 +9,10 @@ const addBoard = async newBoard => {
   return newBoard;
 };
 
-const getBoardById = async id => {
-  return await allBoards.find(item => item.id === id);
-  // return !result ? new Error({ message: 'no user found' }) : result;
+const getBoardById = id => {
+  return allBoards.find(item => item.id === id);
 };
+
 const updateBoard = async (id, boardData) => {
   const updatedBoard = await getBoardById(id);
   Object.assign(updatedBoard, boardData);

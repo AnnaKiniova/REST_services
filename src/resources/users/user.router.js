@@ -17,7 +17,6 @@ router
       const newUser = await usersService.createUser(req.body);
       res.status(200).json(User.toResponse(newUser));
     } catch (e) {
-      console.log(e);
       res.status(400).end(e);
     }
   });
@@ -29,7 +28,6 @@ router
       const userFind = await usersService.getUserById(req.params.id);
       res.status(200).json(User.toResponse(userFind));
     } catch (e) {
-      console.log(e);
       res.status(400).json(e);
     }
   })
@@ -41,7 +39,6 @@ router
       );
       res.status(200).json(User.toResponse(updatedUser));
     } catch (e) {
-      console.log(e);
       res.status(400).json(e);
     }
   })

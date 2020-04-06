@@ -1,6 +1,7 @@
 const Joi = require('joi');
 
 const usersRepo = require('./user.memory.repository');
+const taskRepo = require('../task/task.memory.repository');
 const User = require('./user.model');
 
 const getAll = () => usersRepo.getAll();
@@ -19,7 +20,10 @@ const updateUser = async (id, userData) => {
   }
 };
 
-const deleteUser = async id => usersRepo.deleteUser(id);
+const deleteUser = async id => {
+  await taskRepo.cleanUpUser(id);
+  return await usersRepo.deleteUser(id);
+};
 
 const validateUser = input => {
   const schema = Joi.object({

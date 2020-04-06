@@ -13,7 +13,6 @@ router
   })
   .post(async (req, res) => {
     try {
-      // console.log(req.params);
       const newTask = await taskService.createTask(req.body, req.params);
 
       res

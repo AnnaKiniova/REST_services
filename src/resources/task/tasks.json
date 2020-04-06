@@ -3,7 +3,7 @@
     "title": "title 1",
     "order": 0,
     "description": "descr 1",
-    "userId": "userId",
+    "userId": "1",
     "boardId": "boardid1",
     "columnId": "column  id 1"
 }, {
@@ -11,7 +11,7 @@
     "title": "title 2",
     "order": 0,
     "description": "descr 2",
-    "userId": "userId",
+    "userId": "1",
     "boardId": "boardid1",
     "columnId": "column  id 1"
 }]
