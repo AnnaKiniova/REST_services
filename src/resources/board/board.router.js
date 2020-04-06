@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const Board = require('./board.model');
 const boardService = require('./board.service');
 
 router
@@ -8,21 +7,18 @@ router
     const boards = await boardService.getAll();
     res
       .status(200)
-      .json(boards.map(Board.toResponse))
+      .json(boards)
       .end();
   })
   .post(async (req, res) => {
-    try {
-      const newBoard = await boardService.createBoard(req.body);
+    const newBoard = await boardService.createBoard(req.body);
+    if (newBoard) {
       res
         .status(200)
         .json(newBoard)
         .end();
-    } catch (e) {
-      res
-        .status(400)
-        .json(e)
-        .end();
+    } else {
+      res.status(400).end('Bad request');
     }
   });
 
@@ -38,12 +34,16 @@ router
   })
   .put(async (req, res) => {
     const newBoard = await boardService.updateBoard(req.params.id, req.body);
-    res.status(200).json(newBoard);
+    if (newBoard) {
+      res.status(200).json(newBoard);
+    } else {
+      res.status(400).end('Task not found');
+    }
   })
   .delete(async (req, res) => {
     const board = await boardService.deleteBoard(req.params.id);
     if (board) {
-      res.status(204).end();
+      res.status(204).end('The task has been deleted');
     } else {
       res.status(400).end();
     }

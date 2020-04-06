@@ -1,7 +1,7 @@
 const allUsers = require('./users.json');
 
-const getAll = () => {
-  return allUsers;
+const getAll = async () => {
+  return await allUsers;
 };
 
 const addUser = newUser => {
@@ -10,8 +10,7 @@ const addUser = newUser => {
 };
 
 const getUserById = async id => {
-  const result = await allUsers.find(item => item.id === id);
-  return !result ? new Error({ message: 'no such user' }) : result;
+  return await allUsers.find(item => item.id === id);
 };
 
 const updateUser = async (id, userData) => {
@@ -21,8 +20,12 @@ const updateUser = async (id, userData) => {
 };
 
 const deleteUser = async id => {
-  await getUserById(id);
-  allUsers.splice(id - 1, 1);
+  const index = allUsers.findIndex(item => item.id === id);
+  if (index) {
+    allUsers.splice(index - 1, 1);
+    return true;
+  }
+  return false;
 };
 
 module.exports = { getAll, addUser, getUserById, updateUser, deleteUser };

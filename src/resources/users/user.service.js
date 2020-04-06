@@ -12,7 +12,7 @@ const createUser = async userData => {
     return await usersRepo.addUser(newUser);
   }
 };
-const getUserById = async id => await usersRepo.getUserById(id);
+const getUserById = id => usersRepo.getUserById(id);
 
 const updateUser = async (id, userData) => {
   if (validateUser(userData)) {
@@ -33,9 +33,9 @@ const validateUser = input => {
     password: Joi.string().required()
   });
   const result = schema.validate(input);
-  if (result.error) {
-    throw new Error({ message: 'invalid data provided' });
-  }
+  // if (result.error) {
+  //   throw new Error({ message: 'invalid data provided' });
+  // }
   return !result.error;
 };
 

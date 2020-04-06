@@ -9,8 +9,8 @@ const addBoard = async newBoard => {
   return newBoard;
 };
 
-const getBoardById = id => {
-  return allBoards.find(item => item.id === id);
+const getBoardById = async id => {
+  return await allBoards.find(item => item.id === id);
 };
 
 const updateBoard = async (id, boardData) => {

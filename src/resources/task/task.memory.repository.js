@@ -30,12 +30,14 @@ const deleteTask = async params => {
 
 const cleanUpUser = async userId => {
   const tasksToUpdate = await allTasks.filter(item => item.userId === userId);
-  tasksToUpdate.map(item => Object.assign(item, { userId: null }));
+  await tasksToUpdate.map(item => Object.assign(item, { userId: null }));
+  return true;
 };
 
 const creanUpBoard = async id => {
   const tasksToDelete = await allTasks.filter(item => item.boardId === id);
   await tasksToDelete.map(item => deleteTask(item.id));
+  return true;
 };
 
 module.exports = {

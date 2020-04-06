@@ -1,5 +1,4 @@
 const router = require('express').Router({ mergeParams: true });
-// const Task = require('./task.model');
 const taskService = require('./task.service');
 
 router
@@ -12,18 +11,14 @@ router
       .end();
   })
   .post(async (req, res) => {
-    try {
-      const newTask = await taskService.createTask(req.body, req.params);
-
+    const newTask = await taskService.createTask(req.body, req.params);
+    if (newTask) {
       res
         .status(200)
         .json(newTask)
         .end();
-    } catch (e) {
-      res
-        .status(400)
-        .json(e)
-        .end();
+    } else {
+      res.status(400).end('Bad request');
     }
   });
 
@@ -39,17 +34,18 @@ router
   })
   .put(async (req, res) => {
     const newTask = await taskService.updateTask(req.params, req.body);
-    res.status(200).json(newTask);
+    if (newTask) {
+      res.status(200).json(newTask);
+    } else {
+      res.status(400).end('Bad request');
+    }
   })
   .delete(async (req, res) => {
-    console.log('in delete route');
-
-    console.log(req.params);
     const deletedTask = await taskService.deleteTask(req.params);
     if (deletedTask) {
-      res.status(204).end();
+      res.status(204).end('The task has been deleted');
     } else {
-      res.status(404).end();
+      res.status(404).end('Task not found');
     }
   });
 
