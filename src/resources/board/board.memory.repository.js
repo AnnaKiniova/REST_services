@@ -1,16 +1,16 @@
 const allBoards = require('./boards.json');
 
-const getAll = () => {
+const getAll = async () => {
   return allBoards;
 };
 
 const addBoard = async newBoard => {
-  await allBoards.push(newBoard);
+  allBoards.push(newBoard);
   return newBoard;
 };
 
 const getBoardById = async id => {
-  return await allBoards.find(item => item.id === id);
+  return allBoards.find(item => item.id === id);
 };
 
 const updateBoard = async (id, boardData) => {
@@ -19,7 +19,7 @@ const updateBoard = async (id, boardData) => {
   return updatedBoard;
 };
 
-const deleteBoard = id => {
+const deleteBoard = async id => {
   const index = allBoards.findIndex(item => item.id === id);
   if (index !== -1) {
     allBoards.splice(index, 1);

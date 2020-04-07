@@ -4,7 +4,7 @@ const taskService = require('./task.service');
 router
   .route('/')
   .get(async (req, res) => {
-    const tasks = await taskService.getAll();
+    const tasks = await taskService.getAll(req.params);
     res
       .status(200)
       .json(tasks)

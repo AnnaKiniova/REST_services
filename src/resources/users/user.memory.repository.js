@@ -1,16 +1,16 @@
 const allUsers = require('./users.json');
 
 const getAll = async () => {
-  return await allUsers;
+  return allUsers;
 };
 
-const addUser = newUser => {
+const addUser = async newUser => {
   allUsers.push(newUser);
   return newUser;
 };
 
 const getUserById = async id => {
-  return await allUsers.find(item => item.id === id);
+  return allUsers.find(item => item.id === id);
 };
 
 const updateUser = async (id, userData) => {
