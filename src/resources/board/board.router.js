@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const boardService = require('./board.service');
+const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -24,12 +25,13 @@ router
 
 router
   .route('/:id')
-  .get(async (req, res) => {
-    const board = await boardService.getBoardById(req.params.id);
-    if (board) {
+  .get(async (req, res, next) => {
+    try {
+      const board = await boardService.getBoardById(req.params.id);
       res.status(200).json(board);
-    } else {
-      res.status(404).end();
+    } catch (e) {
+      // eslint-disable-next-line callback-return
+      next(e);
     }
   })
   .put(async (req, res) => {
@@ -48,5 +50,9 @@ router
       res.status(400).end();
     }
   });
+// eslint-disable-next-line no-unused-vars
+router.use((e, req, res, next) => {
+  handleError(e, res);
+});
 
 module.exports = router;

@@ -1,5 +1,6 @@
 const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
+const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -48,5 +49,10 @@ router
       res.status(404).end('Task not found');
     }
   });
+
+// eslint-disable-next-line no-unused-vars
+router.use((e, req, res, next) => {
+  handleError(e, res);
+});
 
 module.exports = router;

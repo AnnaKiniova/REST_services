@@ -1,4 +1,5 @@
 const allUsers = require('./users.json');
+const { userError } = require('../../errorHandler');
 
 const getAll = async () => {
   return allUsers;
@@ -10,7 +11,11 @@ const addUser = async newUser => {
 };
 
 const getUserById = async id => {
-  return allUsers.find(item => item.id === id);
+  const requiredUser = allUsers.find(item => item.id === id);
+  if (requiredUser === undefined) {
+    throw new userError(404, 'User not found');
+  }
+  return requiredUser;
 };
 
 const updateUser = async (id, userData) => {
@@ -21,11 +26,11 @@ const updateUser = async (id, userData) => {
 
 const deleteUser = async id => {
   const index = allUsers.findIndex(item => item.id === id);
-  if (index) {
-    allUsers.splice(index - 1, 1);
-    return true;
+  if (index === -1) {
+    throw new userError(404, 'User not found');
   }
-  return false;
+  allUsers.splice(index, 1);
+  return true;
 };
 
 module.exports = { getAll, addUser, getUserById, updateUser, deleteUser };

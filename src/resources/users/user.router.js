@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
+const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -19,12 +20,13 @@ router
 
 router
   .route('/:id')
-  .get(async (req, res) => {
-    const userFind = await usersService.getUserById(req.params.id);
-    if (userFind) {
+  .get(async (req, res, next) => {
+    try {
+      const userFind = await usersService.getUserById(req.params.id);
       res.status(200).json(User.toResponse(userFind));
-    } else {
-      res.status(404).end('user not found');
+    } catch (e) {
+      // eslint-disable-next-line callback-return
+      next(e);
     }
   })
   .put(async (req, res) => {
@@ -36,13 +38,19 @@ router
     }
   })
 
-  .delete(async (req, res) => {
-    const isDeleted = await usersService.deleteUser(req.params.id);
-    if (isDeleted) {
-      res.status(204).end('The user has been deleted');
-    } else {
-      res.status(404).end('User not found');
+  .delete(async (req, res, next) => {
+    try {
+      await usersService.deleteUser(req.params.id);
+      res.status(204).json('The user has been deleted');
+    } catch (e) {
+      // eslint-disable-next-line callback-return
+      next(e);
     }
   });
+
+// eslint-disable-next-line no-unused-vars
+router.use((e, req, res, next) => {
+  handleError(e, res);
+});
 
 module.exports = router;

@@ -1,4 +1,5 @@
 const allBoards = require('./boards.json');
+const { userError } = require('../../errorHandler');
 
 const getAll = async () => {
   return allBoards;
@@ -10,7 +11,11 @@ const addBoard = async newBoard => {
 };
 
 const getBoardById = async id => {
-  return allBoards.find(item => item.id === id);
+  const boards = allBoards.find(item => item.id === id);
+  if (!boards) {
+    throw new userError(404, 'Board not found');
+  }
+  return boards;
 };
 
 const updateBoard = async (id, boardData) => {
@@ -21,11 +26,10 @@ const updateBoard = async (id, boardData) => {
 
 const deleteBoard = async id => {
   const index = allBoards.findIndex(item => item.id === id);
-  if (index !== -1) {
-    allBoards.splice(index, 1);
-    console.log(allBoards);
-    return true;
+  if (index === -1) {
+    throw new userError(404, 'Board not found');
   }
-  return false;
+  allBoards.splice(index, 1);
+  return true;
 };
 module.exports = { getAll, addBoard, getBoardById, updateBoard, deleteBoard };
