@@ -7,6 +7,7 @@ const fs = require('fs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/board/board.router');
 const taskRouter = require('./resources/task/task.router');
+const logger = require('./logger');
 
 const { handleError } = require('./errorHandler');
 const { UserError } = require('./errorHandler');
@@ -26,25 +27,24 @@ app.use('/', (req, res, next) => {
   next();
 });
 
+app.use('*', logger.processRequests);
+
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards/:boardId/tasks', taskRouter);
 
 app.use((err, req, res, next) => {
-  // console.log('before check');
-  // console.log(err instanceof UserError.constructor);
-  // console.log(err instanceof Error);
   if (err instanceof UserError) {
     console.log('in app check');
-    // console.log(err);
-
     handleError(err, req, res);
+    logger.processError(err);
     return;
   }
   next(err);
 });
 
 app.use((err, req, res) => {
+  logger.processError(err);
   res
     .status(500)
     .send(err.message)
