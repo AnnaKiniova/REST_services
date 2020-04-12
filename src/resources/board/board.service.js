@@ -20,13 +20,14 @@ const updateBoard = (id, boardData) => {
 
 const deleteBoard = async id => {
   const tasks = await taskRepo.getAll({ boardId: id });
+  await boardRepo.deleteBoard(id);
   await Promise.all([
     tasks.map(task => {
       return taskRepo.deleteTask(task);
     })
   ]);
 
-  return boardRepo.deleteBoard(id);
+  // return
 };
 
 module.exports = {

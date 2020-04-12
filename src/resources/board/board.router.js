@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const boardService = require('./board.service');
-const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -34,25 +33,24 @@ router
       next(e);
     }
   })
-  .put(async (req, res) => {
-    const newBoard = await boardService.updateBoard(req.params.id, req.body);
-    if (newBoard) {
+  .put(async (req, res, next) => {
+    try {
+      const newBoard = await boardService.updateBoard(req.params.id, req.body);
+
       res.status(200).json(newBoard);
-    } else {
-      res.status(400).end('Task not found');
+    } catch (e) {
+      // eslint-disable-next-line callback-return
+      next(e);
     }
   })
-  .delete(async (req, res) => {
-    const board = await boardService.deleteBoard(req.params.id);
-    if (board) {
+  .delete(async (req, res, next) => {
+    try {
+      await boardService.deleteBoard(req.params.id);
       res.status(204).end('The task has been deleted');
-    } else {
-      res.status(400).end();
+    } catch (e) {
+      // eslint-disable-next-line callback-return
+      next(e);
     }
   });
-// eslint-disable-next-line no-unused-vars
-router.use((e, req, res, next) => {
-  handleError(e, res);
-});
 
 module.exports = router;

@@ -1,4 +1,4 @@
-class userError extends Error {
+class UserError extends Error {
   constructor(statusCode, descr) {
     super();
     this.descr = descr;
@@ -7,7 +7,8 @@ class userError extends Error {
 }
 
 const handleError = (err, req, res) => {
+  console.log('in handler');
   const { statusCode, descr } = err;
   res.status(statusCode).json({ statusCode, descr });
 };
-module.exports = { userError, handleError };
+module.exports = { UserError, handleError };

@@ -1,6 +1,6 @@
+/* eslint-disable callback-return */
 const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
-const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -11,48 +11,43 @@ router
       .json(tasks)
       .end();
   })
-  .post(async (req, res) => {
-    const newTask = await taskService.createTask(req.body, req.params);
-    if (newTask) {
+  .post(async (req, res, next) => {
+    try {
+      const newTask = await taskService.createTask(req.body, req.params);
       res
         .status(200)
         .json(newTask)
         .end();
-    } else {
-      res.status(400).end('Bad request');
+    } catch (e) {
+      next(e);
     }
   });
 
 router
   .route('/:id')
-  .get(async (req, res) => {
-    const requiredTask = await taskService.getTaskById(req.params.id);
-    if (requiredTask) {
+  .get(async (req, res, next) => {
+    try {
+      const requiredTask = await taskService.getTaskById(req.params.id);
       res.status(200).json(requiredTask);
-    } else {
-      res.status(404).end();
+    } catch (e) {
+      next(e);
     }
   })
-  .put(async (req, res) => {
-    const newTask = await taskService.updateTask(req.params, req.body);
-    if (newTask) {
+  .put(async (req, res, next) => {
+    try {
+      const newTask = await taskService.updateTask(req.params, req.body);
       res.status(200).json(newTask);
-    } else {
-      res.status(400).end('Bad request');
+    } catch (e) {
+      next(e);
     }
   })
-  .delete(async (req, res) => {
-    const deletedTask = await taskService.deleteTask(req.params);
-    if (deletedTask) {
+  .delete(async (req, res, next) => {
+    try {
+      await taskService.deleteTask(req.params);
       res.status(204).end('The task has been deleted');
-    } else {
-      res.status(404).end('Task not found');
+    } catch (e) {
+      next(e);
     }
   });
-
-// eslint-disable-next-line no-unused-vars
-router.use((e, req, res, next) => {
-  handleError(e, res);
-});
 
 module.exports = router;

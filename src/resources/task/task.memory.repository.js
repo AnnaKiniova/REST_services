@@ -1,4 +1,5 @@
 const allTasks = require('./tasks.json');
+const { UserError } = require('../../errorHandler');
 
 const getAll = async params => {
   return allTasks.filter(z => z.boardId === params.boardId);
@@ -10,7 +11,11 @@ const addTask = async newTask => {
 };
 
 const getTaskById = async id => {
-  return allTasks.find(item => item.id === id);
+  const task = allTasks.find(item => item.id === id);
+  if (!task) {
+    throw new UserError(404, 'Task not found');
+  }
+  return task;
 };
 
 const updateTask = async (params, taskData) => {
@@ -21,11 +26,11 @@ const updateTask = async (params, taskData) => {
 
 const deleteTask = async params => {
   const index = allTasks.findIndex(item => item.id === params.id);
-  if (index !== -1) {
-    allTasks.splice(index, 1);
-    return true;
+  if (index === -1) {
+    throw new UserError(404, 'Task not found');
   }
-  return false;
+  allTasks.splice(index, 1);
+  return true;
 };
 
 const cleanUpUser = async userId => {

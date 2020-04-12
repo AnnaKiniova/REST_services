@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
-const { handleError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -25,6 +24,7 @@ router
       const userFind = await usersService.getUserById(req.params.id);
       res.status(200).json(User.toResponse(userFind));
     } catch (e) {
+      console.log('error');
       // eslint-disable-next-line callback-return
       next(e);
     }
@@ -47,10 +47,5 @@ router
       next(e);
     }
   });
-
-// eslint-disable-next-line no-unused-vars
-router.use((e, req, res, next) => {
-  handleError(e, res);
-});
 
 module.exports = router;

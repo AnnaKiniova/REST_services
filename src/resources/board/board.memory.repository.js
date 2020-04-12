@@ -1,5 +1,5 @@
 const allBoards = require('./boards.json');
-const { userError } = require('../../errorHandler');
+const { UserError } = require('../../errorHandler');
 
 const getAll = async () => {
   return allBoards;
@@ -13,7 +13,7 @@ const addBoard = async newBoard => {
 const getBoardById = async id => {
   const boards = allBoards.find(item => item.id === id);
   if (!boards) {
-    throw new userError(404, 'Board not found');
+    throw new UserError(404, 'Board not found');
   }
   return boards;
 };
@@ -27,7 +27,7 @@ const updateBoard = async (id, boardData) => {
 const deleteBoard = async id => {
   const index = allBoards.findIndex(item => item.id === id);
   if (index === -1) {
-    throw new userError(404, 'Board not found');
+    throw new UserError(404, 'Board not found');
   }
   allBoards.splice(index, 1);
   return true;
