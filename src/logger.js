@@ -32,12 +32,12 @@ const processRequests = (req, res, next) => {
 };
 
 const processError = async message => {
-  const { statusCode, descr } = message;
+  const { statusCode, description } = message;
   await logger.log({
     level: 'error',
     date: new Date(),
     statusCode,
-    descr
+    description
   });
 };
 

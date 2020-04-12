@@ -1,13 +1,13 @@
 class UserError extends Error {
-  constructor(statusCode, descr) {
+  constructor(statusCode, description) {
     super();
-    this.descr = descr;
     this.statusCode = statusCode;
+    this.description = description;
   }
 }
 
 const handleError = (err, req, res) => {
-  const { statusCode, descr } = err;
-  res.status(statusCode).json({ statusCode, descr });
+  const { statusCode, description } = err;
+  res.status(statusCode).json({ statusCode, description });
 };
 module.exports = { UserError, handleError };
