@@ -1,5 +1,3 @@
-// const Joi = require('joi');
-
 const usersRepo = require('./user.memory.repository');
 const taskRepo = require('../task/task.memory.repository');
 const User = require('./user.model');

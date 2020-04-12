@@ -3,6 +3,7 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 
 const asyncWrap = require('../../async_wrap');
+const { UserError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -10,14 +11,15 @@ router
     const allUsers = await usersService.getAll();
     res.status(200).json(allUsers.map(User.toResponse));
   })
-  .post(async (req, res) => {
-    const newUser = await usersService.createUser(req.body);
-    if (newUser) {
+  .post(
+    asyncWrap(async (req, res) => {
+      if (!req.body.name || !req.body.login || !req.body.password) {
+        throw new UserError(400, 'Bad request');
+      }
+      const newUser = await usersService.createUser(req.body);
       res.status(200).json(User.toResponse(newUser));
-    } else {
-      res.status(400).end('bad request');
-    }
-  });
+    })
+  );
 
 router
   .route('/:id')
@@ -29,6 +31,9 @@ router
   )
   .put(
     asyncWrap(async (req, res) => {
+      if (!req.body.name || !req.body.login || !req.body.password) {
+        throw new UserError(400, 'Bad request');
+      }
       const updatedUser = await usersService.updateUser(
         req.params.id,
         req.body

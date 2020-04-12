@@ -3,6 +3,7 @@ const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
 
 const asyncWrap = require('../../async_wrap');
+const { UserError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -13,17 +14,18 @@ router
       .json(tasks)
       .end();
   })
-  .post(async (req, res, next) => {
-    try {
+  .post(
+    asyncWrap(async (req, res) => {
+      if (Object.keys(req.body).length === 0) {
+        throw new UserError(400, 'Bad request');
+      }
       const newTask = await taskService.createTask(req.body, req.params);
       res
         .status(200)
         .json(newTask)
         .end();
-    } catch (e) {
-      next(e);
-    }
-  });
+    })
+  );
 
 router
   .route('/:id')
@@ -35,6 +37,10 @@ router
   )
   .put(
     asyncWrap(async (req, res) => {
+      if (Object.keys(req.body).length === 0) {
+        throw new UserError(400, 'Bad request');
+      }
+
       const newTask = await taskService.updateTask(req.params, req.body);
       res.status(200).json(newTask);
     })

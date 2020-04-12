@@ -82,3 +82,54 @@
 {"level":"error","date":"2020-04-12T19:52:05.196Z","statusCode":404,"descr":"Task not found"}
 {"level":"error","date":"2020-04-12T19:52:05.196Z","statusCode":404,"descr":"Task not found"}
 {"level":"error","date":"2020-04-12T19:52:05.198Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:21:14.729Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:21:16.728Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:21:18.728Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:21:20.728Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:21:22.728Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:09.227Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:11.225Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:13.225Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:15.225Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:17.226Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:32.107Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:34.105Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:36.105Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:38.105Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:40.106Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:52.917Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:54.916Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:56.916Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:22:58.916Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:23:00.916Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T20:30:16.209Z","statusCode":404,"descr":"User not found"}
+{"level":"error","date":"2020-04-12T20:32:47.191Z","message":"Unhandled Rejection : Error"}
+{"level":"error","date":"2020-04-12T20:33:22.235Z","message":"Unhandled Rejection : Error"}
+{"level":"error","date":"2020-04-12T20:34:31.386Z","message":"Unhandled Rejection : undefined"}
+{"level":"error","date":"2020-04-12T20:34:31.387Z","message":"Unhandled Rejection : Error"}
+{"level":"error","date":"2020-04-12T20:35:25.438Z","statusCode":400,"descr":"Bad request"}
+{"level":"error","date":"2020-04-12T20:37:07.272Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:37:07.274Z","statusCode":404,"descr":"Board not found"}
+{"level":"error","date":"2020-04-12T20:37:07.300Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:37:07.301Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:37:07.301Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:37:07.301Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:37:07.302Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:42:09.096Z","statusCode":400,"descr":"Bad request"}
+{"level":"error","date":"2020-04-12T20:42:35.204Z","statusCode":404,"descr":"Board not found"}
+{"level":"error","date":"2020-04-12T20:42:49.692Z","statusCode":404,"descr":"Board not found"}
+{"level":"error","date":"2020-04-12T20:43:17.970Z","statusCode":400,"descr":"Bad request"}
+{"level":"error","date":"2020-04-12T20:46:40.355Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:40.369Z","statusCode":404,"descr":"Board not found"}
+{"level":"error","date":"2020-04-12T20:46:40.393Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:40.394Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:40.395Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:40.396Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:40.396Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.009Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.010Z","statusCode":404,"descr":"Board not found"}
+{"level":"error","date":"2020-04-12T20:46:47.038Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.039Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.040Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.041Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T20:46:47.041Z","statusCode":404,"descr":"Task not found"}

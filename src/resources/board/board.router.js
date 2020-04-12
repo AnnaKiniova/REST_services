@@ -2,6 +2,7 @@ const router = require('express').Router();
 const boardService = require('./board.service');
 
 const asyncWrap = require('../../async_wrap');
+const { UserError } = require('../../errorHandler');
 
 router
   .route('/')
@@ -13,14 +14,15 @@ router
       .end();
   })
   .post(async (req, res) => {
+    if (Object.keys(req.body).length === 0) {
+      throw new UserError(400, 'Bad request');
+    }
     const newBoard = await boardService.createBoard(req.body);
     if (newBoard) {
       res
         .status(200)
         .json(newBoard)
         .end();
-    } else {
-      res.status(400).end('Bad request');
     }
   });
 
@@ -34,6 +36,9 @@ router
   )
   .put(
     asyncWrap(async (req, res) => {
+      if (Object.keys(req.body).length === 0) {
+        throw new UserError(400, 'Bad request');
+      }
       const newBoard = await boardService.updateBoard(req.params.id, req.body);
       res.status(200).json(newBoard);
     })
