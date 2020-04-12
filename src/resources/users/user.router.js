@@ -2,6 +2,8 @@ const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
 
+const asyncWrap = require('../../async_wrap');
+
 router
   .route('/')
   .get(async (req, res) => {
@@ -19,33 +21,26 @@ router
 
 router
   .route('/:id')
-  .get(async (req, res, next) => {
-    try {
+  .get(
+    asyncWrap(async (req, res) => {
       const userFind = await usersService.getUserById(req.params.id);
       res.status(200).json(User.toResponse(userFind));
-    } catch (e) {
-      console.log('error');
-      // eslint-disable-next-line callback-return
-      next(e);
-    }
-  })
-  .put(async (req, res) => {
-    const updatedUser = await usersService.updateUser(req.params.id, req.body);
-    if (updatedUser) {
+    })
+  )
+  .put(
+    asyncWrap(async (req, res) => {
+      const updatedUser = await usersService.updateUser(
+        req.params.id,
+        req.body
+      );
       res.status(200).json(User.toResponse(updatedUser));
-    } else {
-      res.status(400).end('bad request');
-    }
-  })
+    })
+  )
 
-  .delete(async (req, res, next) => {
-    try {
+  .delete(
+    asyncWrap(async (req, res) => {
       await usersService.deleteUser(req.params.id);
       res.status(204).json('The user has been deleted');
-    } catch (e) {
-      // eslint-disable-next-line callback-return
-      next(e);
-    }
-  });
-
+    })
+  );
 module.exports = router;

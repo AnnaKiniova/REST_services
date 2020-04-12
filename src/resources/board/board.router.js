@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const boardService = require('./board.service');
 
+const asyncWrap = require('../../async_wrap');
+
 router
   .route('/')
   .get(async (req, res) => {
@@ -24,33 +26,23 @@ router
 
 router
   .route('/:id')
-  .get(async (req, res, next) => {
-    try {
+  .get(
+    asyncWrap(async (req, res) => {
       const board = await boardService.getBoardById(req.params.id);
       res.status(200).json(board);
-    } catch (e) {
-      // eslint-disable-next-line callback-return
-      next(e);
-    }
-  })
-  .put(async (req, res, next) => {
-    try {
+    })
+  )
+  .put(
+    asyncWrap(async (req, res) => {
       const newBoard = await boardService.updateBoard(req.params.id, req.body);
-
       res.status(200).json(newBoard);
-    } catch (e) {
-      // eslint-disable-next-line callback-return
-      next(e);
-    }
-  })
-  .delete(async (req, res, next) => {
-    try {
+    })
+  )
+  .delete(
+    asyncWrap(async (req, res) => {
       await boardService.deleteBoard(req.params.id);
       res.status(204).end('The task has been deleted');
-    } catch (e) {
-      // eslint-disable-next-line callback-return
-      next(e);
-    }
-  });
+    })
+  );
 
 module.exports = router;
