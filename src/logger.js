@@ -5,7 +5,7 @@ const logger = createLogger({
   level: 'info',
   format: format.json(),
   transports: [
-    new transports.Console(),
+    // new transports.Console(),
     new transports.File({
       filename: 'error.log',
       level: 'error',
@@ -32,6 +32,16 @@ const processRequests = (req, res, next) => {
 };
 
 const processError = async message => {
+  const { statusCode, descr } = message;
+  await logger.log({
+    level: 'error',
+    date: new Date(),
+    statusCode,
+    descr
+  });
+};
+
+const processUncaughtError = async message => {
   await logger.log({
     level: 'error',
     date: new Date(),
@@ -39,4 +49,4 @@ const processError = async message => {
   });
 };
 
-module.exports = { processRequests, processError };
+module.exports = { processRequests, processError, processUncaughtError };

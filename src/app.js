@@ -2,7 +2,6 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
-const fs = require('fs');
 
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/board/board.router');
@@ -35,7 +34,6 @@ app.use('/boards/:boardId/tasks', taskRouter);
 
 app.use((err, req, res, next) => {
   if (err instanceof UserError) {
-    console.log('in app check');
     handleError(err, req, res);
     logger.processError(err);
     return;
@@ -52,29 +50,28 @@ app.use((err, req, res) => {
 });
 
 process.on('uncaughtException', e => {
-  // eslint-disable-next-line no-sync
-  fs.writeFileSync(path.join(__dirname, '.fatal.log'), JSON.stringify(e));
-  console.log('uncaught error');
+  logger.processUncaughtError(`Unhandled Exception : ${e}`);
   // eslint-disable-next-line no-process-exit
   process.exit(1);
 });
 
-process.on('unhandledRejection', () => {
-  console.error('Unhandled rejection detected');
+process.on('unhandledRejection', e => {
+  logger.processUncaughtError(`Unhandled Rejection : ${e}`);
 });
 
-// code is left for you to improve testing and evaluation. Please use it for saving time.
+// code is left to save time while checking task
 
 // setInterval(() => {
 //   console.log('working');
-// }, 1000);
+// }, 500);
 
 // setInterval(() => {
 //   Promise.reject(Error('Oops!'));
-// }, 2500);
+//   console.log('promise reject');
+// }, 2000);
 
 // setInterval(() => {
 //   throw Error('Oops!');
-// }, 5000);
+// }, 10000);
 
 module.exports = app;

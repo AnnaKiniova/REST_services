@@ -1,2 +1,315 @@
 {"level":"info","date":"2020-04-12T18:51:37.841Z","url":"/","params":{"0":"/users/1555"},"body":{"title":"upd","order":3,"description":"upd","userId":"upd","boardId":"","columnId":"column  id 1"}}
 {"level":"error","date":"2020-04-12T18:51:37.851Z","message":{"descr":"User not found","statusCode":404}}
+{"level":"info","date":"2020-04-12T18:56:56.816Z","url":"/","params":{"0":"/users"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.840Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.844Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.853Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:56:56.856Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.858Z","url":"/","params":{"0":"/users/65b44dfd-19b1-4c85-b94b-ea4bc36678e0"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.862Z","url":"/","params":{"0":"/users/65b44dfd-19b1-4c85-b94b-ea4bc36678e0"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.864Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.866Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.872Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:56:56.873Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.874Z","url":"/","params":{"0":"/boards/boardid1"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.878Z","url":"/","params":{"0":"/users/c5e6f1b1-9664-4338-bf49-f0cd249fa534"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.879Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.880Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:56:56.882Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.883Z","url":"/","params":{"0":"/boards/098b7b71-3d39-490e-a630-0f6e0c8103dc"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.884Z","url":"/","params":{"0":"/users/9bda15cb-9728-47b0-9e42-a6e440b4ba1b"},"body":{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"9bda15cb-9728-47b0-9e42-a6e440b4ba1b"}}
+{"level":"info","date":"2020-04-12T18:56:56.885Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/6f311725-2b8a-4328-97c8-a12f804637d2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.886Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.887Z","url":"/","params":{"0":"/users/9bda15cb-9728-47b0-9e42-a6e440b4ba1b"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.888Z","url":"/","params":{"0":"/boards/37cdbed1-5446-47c1-a2b2-f53050f05b5e"},"body":{"id":"37cdbed1-5446-47c1-a2b2-f53050f05b5e","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.890Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.890Z","url":"/","params":{"0":"/users/9bda15cb-9728-47b0-9e42-a6e440b4ba1b"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.891Z","url":"/","params":{"0":"/boards/37cdbed1-5446-47c1-a2b2-f53050f05b5e"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.893Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/9714228f-efa4-4b8b-85d8-df38441e82bb"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.894Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:56:56.896Z","url":"/","params":{"0":"/boards/37cdbed1-5446-47c1-a2b2-f53050f05b5e"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.896Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.897Z","url":"/","params":{"0":"/users/d6686d36-f8cd-4481-8bf3-7ced926fd09f"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.898Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.900Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/7ddba47d-15f6-442b-8cb8-930e592aa0ac"},"body":{"id":"7ddba47d-15f6-442b-8cb8-930e592aa0ac","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"0eeaea56-4476-4746-ba3c-dd799232f44f","columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.902Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:56:56.903Z","url":"/","params":{"0":"/boards/boardid1"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.904Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/7ddba47d-15f6-442b-8cb8-930e592aa0ac"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.905Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.906Z","url":"/","params":{"0":"/boards/boardid1"},"body":{}}
+{"level":"error","date":"2020-04-12T18:56:56.908Z","statusCode":404,"descr":"Board not found"}
+{"level":"info","date":"2020-04-12T18:56:56.909Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/6f311725-2b8a-4328-97c8-a12f804637d2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.910Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks"},"body":{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"83d40ea5-e3ee-4541-9cb7-102a66a390fc","boardId":"3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a"}}
+{"level":"info","date":"2020-04-12T18:56:56.911Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks"},"body":{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"83d40ea5-e3ee-4541-9cb7-102a66a390fc","boardId":"3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a"}}
+{"level":"info","date":"2020-04-12T18:56:56.912Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:56:56.913Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/6f311725-2b8a-4328-97c8-a12f804637d2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.914Z","url":"/","params":{"0":"/users/83d40ea5-e3ee-4541-9cb7-102a66a390fc"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.915Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks"},"body":{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"e3428dc1-6a08-4173-8a3e-b0085093a5eb","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.917Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks"},"body":{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"e3428dc1-6a08-4173-8a3e-b0085093a5eb","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.918Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f/tasks/6f311725-2b8a-4328-97c8-a12f804637d2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.920Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks"},"body":{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"e3428dc1-6a08-4173-8a3e-b0085093a5eb","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.921Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks/8bd14642-6fa5-4b5f-bb45-3c07d0b01e36"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.922Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks"},"body":{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"e3428dc1-6a08-4173-8a3e-b0085093a5eb","userId":null,"columnId":null}}
+{"level":"error","date":"2020-04-12T18:56:56.923Z","statusCode":404,"descr":"Task not found"}
+{"level":"info","date":"2020-04-12T18:56:56.924Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks"},"body":{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"e3428dc1-6a08-4173-8a3e-b0085093a5eb","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:56:56.926Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks/6e8162dc-85d0-4271-aa5e-8113d6eb97e9"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.927Z","url":"/","params":{"0":"/boards/0eeaea56-4476-4746-ba3c-dd799232f44f"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.929Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/91cca961-f409-48a6-a488-bd91b590cf74"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.930Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/3322bb04-7994-48c6-8282-56330e290c13"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.930Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/e54be742-e732-4442-8634-dfdf48f487b2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.931Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/26e872e7-2bae-48a3-8c20-7ffc691a6b15"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.932Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks/6e8162dc-85d0-4271-aa5e-8113d6eb97e9"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.932Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/b849caa8-035e-448c-815e-d89549bccc51"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.933Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a/tasks/8bd14642-6fa5-4b5f-bb45-3c07d0b01e36"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.934Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.935Z","url":"/","params":{"0":"/boards/3c67fc33-5c1f-4653-b6ca-a1bd3459ab7a"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.937Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/91cca961-f409-48a6-a488-bd91b590cf74"},"body":{}}
+{"level":"error","date":"2020-04-12T18:56:56.938Z","statusCode":404,"descr":"Task not found"}
+{"level":"info","date":"2020-04-12T18:56:56.939Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/3322bb04-7994-48c6-8282-56330e290c13"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.939Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/e54be742-e732-4442-8634-dfdf48f487b2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.940Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/b849caa8-035e-448c-815e-d89549bccc51"},"body":{}}
+{"level":"info","date":"2020-04-12T18:56:56.940Z","url":"/","params":{"0":"/boards/e3428dc1-6a08-4173-8a3e-b0085093a5eb/tasks/26e872e7-2bae-48a3-8c20-7ffc691a6b15"},"body":{}}
+{"level":"error","date":"2020-04-12T18:56:56.941Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:56:56.941Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:56:56.942Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:56:56.942Z","statusCode":404,"descr":"Task not found"}
+{"level":"info","date":"2020-04-12T18:57:39.488Z","url":"/","params":{"0":"/users"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.496Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.522Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.524Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.531Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.532Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.542Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.543Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.544Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:57:39.546Z","url":"/","params":{"0":"/boards/boardid2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.547Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/26b44550-f35c-48c9-899e-b0bc542f7b19"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.548Z","url":"/","params":{"0":"/users/134fe187-770c-4341-8ebf-1a1241b5f31b"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.552Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.553Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.554Z","url":"/","params":{"0":"/users/134fe187-770c-4341-8ebf-1a1241b5f31b"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.555Z","url":"/","params":{"0":"/boards/c5b3bd3a-ec87-4cde-a167-46587a89f563"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.556Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/c5d4a351-996f-44f1-b552-b909253fe73a"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.557Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:57:39.558Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.559Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks"},"body":{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.560Z","url":"/","params":{"0":"/boards/12065e14-fbd8-4531-abb4-b662be36ae27"},"body":{"id":"12065e14-fbd8-4531-abb4-b662be36ae27","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.561Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/08798010-391f-4fa6-8474-593b63d6bc9b"},"body":{"id":"08798010-391f-4fa6-8474-593b63d6bc9b","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"8faa1810-13ad-4c53-ae43-f8c5645ec405","columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.561Z","url":"/","params":{"0":"/boards/12065e14-fbd8-4531-abb4-b662be36ae27"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.562Z","url":"/","params":{"0":"/users/80c144a8-2208-4a51-8351-6e2fd560e987"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.563Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/08798010-391f-4fa6-8474-593b63d6bc9b"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.564Z","url":"/","params":{"0":"/boards/12065e14-fbd8-4531-abb4-b662be36ae27"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.564Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:57:39.566Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/26b44550-f35c-48c9-899e-b0bc542f7b19"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.568Z","url":"/","params":{"0":"/boards"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.569Z","url":"/","params":{"0":"/users/13bf8f2c-cf96-4c13-8954-a1be1a22e477"},"body":{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"13bf8f2c-cf96-4c13-8954-a1be1a22e477"}}
+{"level":"info","date":"2020-04-12T18:57:39.570Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/26b44550-f35c-48c9-899e-b0bc542f7b19"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.571Z","url":"/","params":{"0":"/boards/boardid2"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.575Z","url":"/","params":{"0":"/users/13bf8f2c-cf96-4c13-8954-a1be1a22e477"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.576Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405/tasks/26b44550-f35c-48c9-899e-b0bc542f7b19"},"body":{}}
+{"level":"error","date":"2020-04-12T18:57:39.576Z","statusCode":404,"descr":"Task not found"}
+{"level":"info","date":"2020-04-12T18:57:39.577Z","url":"/","params":{"0":"/boards/boardid2"},"body":{}}
+{"level":"error","date":"2020-04-12T18:57:39.578Z","statusCode":404,"descr":"Board not found"}
+{"level":"info","date":"2020-04-12T18:57:39.578Z","url":"/","params":{"0":"/users/13bf8f2c-cf96-4c13-8954-a1be1a22e477"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.579Z","url":"/","params":{"0":"/boards/8faa1810-13ad-4c53-ae43-f8c5645ec405"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.580Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.581Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:57:39.583Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks"},"body":{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"14808f3f-797f-4839-bb7a-a26d2672f523","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.585Z","url":"/","params":{"0":"/users/67ebe432-46ae-4949-8b48-611956cd2f15"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.586Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks"},"body":{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"14808f3f-797f-4839-bb7a-a26d2672f523","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.588Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks"},"body":{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"14808f3f-797f-4839-bb7a-a26d2672f523","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.588Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks"},"body":{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"14808f3f-797f-4839-bb7a-a26d2672f523","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.589Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks"},"body":{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"14808f3f-797f-4839-bb7a-a26d2672f523","userId":null,"columnId":null}}
+{"level":"info","date":"2020-04-12T18:57:39.590Z","url":"/","params":{"0":"/users"},"body":{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}}
+{"level":"info","date":"2020-04-12T18:57:39.592Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/0b4346d5-5222-4198-8d20-a9025f3ed52d"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.593Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/a6a0ce98-a7b9-4851-9bb3-62c3dfd384b8"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.593Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/11b8b604-1bf9-4f9a-b646-ca7b80597e2e"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.595Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/ef31478b-de61-48fa-9675-ff572c119fb8"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.595Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/62dc3195-eb9a-4810-a5b5-f2826a49829c"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.596Z","url":"/","params":{"0":"/boards"},"body":{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}}
+{"level":"info","date":"2020-04-12T18:57:39.597Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.600Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks"},"body":{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"894d0d95-dc5a-40ad-ac87-9b637b954825","boardId":"5fb72caa-9d3c-409e-b479-911bc63deb44"}}
+{"level":"info","date":"2020-04-12T18:57:39.601Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks"},"body":{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"894d0d95-dc5a-40ad-ac87-9b637b954825","boardId":"5fb72caa-9d3c-409e-b479-911bc63deb44"}}
+{"level":"info","date":"2020-04-12T18:57:39.603Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/11b8b604-1bf9-4f9a-b646-ca7b80597e2e"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.603Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/0b4346d5-5222-4198-8d20-a9025f3ed52d"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.603Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/62dc3195-eb9a-4810-a5b5-f2826a49829c"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.604Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/a6a0ce98-a7b9-4851-9bb3-62c3dfd384b8"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.604Z","url":"/","params":{"0":"/boards/14808f3f-797f-4839-bb7a-a26d2672f523/tasks/ef31478b-de61-48fa-9675-ff572c119fb8"},"body":{}}
+{"level":"error","date":"2020-04-12T18:57:39.605Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:57:39.605Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:57:39.605Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:57:39.606Z","statusCode":404,"descr":"Task not found"}
+{"level":"error","date":"2020-04-12T18:57:39.606Z","statusCode":404,"descr":"Task not found"}
+{"level":"info","date":"2020-04-12T18:57:39.607Z","url":"/","params":{"0":"/users/894d0d95-dc5a-40ad-ac87-9b637b954825"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.610Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks/4c796b7b-7e3e-488f-860c-5a0cdfb9a6eb"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.611Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks/49d9e45e-ff9c-4876-94ed-c1a5a910fc0d"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.613Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks/4c796b7b-7e3e-488f-860c-5a0cdfb9a6eb"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.614Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44/tasks/49d9e45e-ff9c-4876-94ed-c1a5a910fc0d"},"body":{}}
+{"level":"info","date":"2020-04-12T18:57:39.615Z","url":"/","params":{"0":"/boards/5fb72caa-9d3c-409e-b479-911bc63deb44"},"body":{}}
+{"level":"error","date":"2020-04-12T19:05:39.290Z"}
+{"level":"error","date":"2020-04-12T19:05:41.790Z"}
+{"level":"error","date":"2020-04-12T19:07:35.162Z"}
+{"level":"error","date":"2020-04-12T19:07:37.662Z"}
+{"level":"error","date":"2020-04-12T19:07:47.519Z"}
+{"level":"error","date":"2020-04-12T19:07:50.018Z"}
+{"level":"error","date":"2020-04-12T19:09:20.942Z"}
+{"level":"error","date":"2020-04-12T19:09:23.441Z"}
+{"level":"error","date":"2020-04-12T19:09:26.847Z"}
+{"level":"error","date":"2020-04-12T19:09:29.346Z"}
+{"level":"error","date":"2020-04-12T19:09:37.427Z"}
+{"level":"error","date":"2020-04-12T19:09:39.926Z"}
+{"level":"error","date":"2020-04-12T19:10:29.448Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:10:31.947Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:48.559Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:48.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:48.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:49.156Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:49.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:49.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:49.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:49.956Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:50.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:50.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:50.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:50.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:50.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:51.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:51.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:51.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:51.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:51.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:52.157Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:52.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:52.557Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:52.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:52.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:53.157Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:53.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:53.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:53.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:53.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:54.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:54.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:54.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:54.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:54.958Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:55.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:55.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:55.557Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:55.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:55.957Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:56.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:56.358Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:56.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:56.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:56.959Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:57.158Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:57.357Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:57.558Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:57.758Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:57.957Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:58.157Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:11:58.356Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:28.754Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:28.952Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:29.151Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:29.351Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:29.551Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:29.751Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:29.951Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:30.151Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:30.351Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:30.551Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:30.751Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:30.951Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:31.151Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:31.351Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:31.551Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:31.751Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:31.951Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:32.151Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:32.352Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:32.551Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:32.751Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:32.951Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:33.152Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:33.352Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:33.551Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:33.752Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:12:33.952Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:24.696Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:24.894Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:25.094Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:25.294Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:25.494Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:25.694Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:25.894Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:26.094Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:26.294Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:26.494Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:26.694Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:26.894Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:27.094Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:27.295Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:27.494Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:27.694Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:27.895Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:28.096Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:28.298Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:28.498Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:28.699Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:28.899Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:29.099Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:29.299Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:29.499Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:29.699Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:29.899Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:30.099Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:30.299Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:30.499Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:30.699Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:30.899Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:31.099Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:31.300Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:31.499Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:31.700Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:31.900Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:32.099Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:32.300Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:32.499Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:32.700Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:32.900Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:33.100Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:33.300Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:33.500Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:33.700Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:33.900Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:34.100Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:34.300Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:34.492Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:45.194Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:47.193Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:49.192Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:51.192Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:13:53.192Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:14:41.813Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:14:43.811Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:14:45.811Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:14:47.811Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:14:49.811Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:23:51.306Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:23:53.304Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:23:55.304Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:23:58.280Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:00.278Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:02.278Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:04.278Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:06.278Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:09.786Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:11.784Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:13.784Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:15.784Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:17.784Z","message":"Unhandled Exception : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:48.456Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:50.454Z","message":"Unhandled Rejection : Error: Oops!"}
+{"level":"error","date":"2020-04-12T19:24:52.454Z","message":"Unhandled Rejection : Error: Oops!"}
