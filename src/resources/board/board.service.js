@@ -22,7 +22,7 @@ const deleteBoard = async id => {
   const tasks = await taskRepo.getAll({ boardId: id });
   await Promise.all([
     tasks.map(task => {
-      return taskRepo.deleteTask(task.id);
+      return taskRepo.deleteTask(task);
     })
   ]);
 

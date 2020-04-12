@@ -6,7 +6,7 @@ class userError extends Error {
   }
 }
 
-const handleError = (err, res) => {
+const handleError = (err, req, res) => {
   const { statusCode, descr } = err;
   res.status(statusCode).json({ statusCode, descr });
 };

@@ -7,6 +7,9 @@ const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/board/board.router');
 const taskRouter = require('./resources/task/task.router');
 
+const { handleError } = require('./errorHandler');
+const { userError } = require('./errorHandler');
+
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
@@ -26,4 +29,18 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards/:boardId/tasks', taskRouter);
 
+app.use((err, req, res, next) => {
+  if (err instanceof userError) {
+    handleError(err, req, res);
+    return;
+  }
+  next(err);
+});
+
+app.use((err, req, res) => {
+  res
+    .status(500)
+    .send(err.message)
+    .end();
+});
 module.exports = app;

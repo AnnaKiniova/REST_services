@@ -20,7 +20,7 @@ const updateTask = async (params, taskData) => {
 };
 
 const deleteTask = async params => {
-  const index = allTasks.findIndex(item => item.id === params.id || params);
+  const index = allTasks.findIndex(item => item.id === params.id);
   if (index !== -1) {
     allTasks.splice(index, 1);
     return true;
@@ -36,7 +36,7 @@ const cleanUpUser = async userId => {
 
 const creanUpBoard = async id => {
   const tasksToDelete = await allTasks.filter(item => item.boardId === id);
-  await tasksToDelete.map(item => deleteTask(item.id));
+  await tasksToDelete.map(item => deleteTask(item));
 };
 
 module.exports = {
