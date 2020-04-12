@@ -7,7 +7,6 @@ class UserError extends Error {
 }
 
 const handleError = (err, req, res) => {
-  console.log('in handler');
   const { statusCode, descr } = err;
   res.status(statusCode).json({ statusCode, descr });
 };

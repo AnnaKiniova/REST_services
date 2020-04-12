@@ -1,7 +1,6 @@
 const boardRepo = require('./board.memory.repository');
 const Board = require('./board.model');
 const taskRepo = require('../task/task.memory.repository');
-// const Joi = require('joi');
 
 const getAll = () => boardRepo.getAll();
 
@@ -26,8 +25,6 @@ const deleteBoard = async id => {
       return taskRepo.deleteTask(task);
     })
   ]);
-
-  // return
 };
 
 module.exports = {
