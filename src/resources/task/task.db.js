@@ -1,25 +1,23 @@
-const allTasks = require('./tasks.json');
-// const { UserError } = require('../../errorHandler');
+// const allTasks = require('./tasks.json');
+const { UserError } = require('../../errorHandler');
 // const mongoose = require('mongoose');
 const Task = require('./task.model');
 
 const getAll = async params => {
-  return Task.find(z => z.boardId === params.boardId);
+  return await Task.find({ boardId: params.boardId });
 };
 
-const addTask = async (taskData, params) => {
-  const newTask = taskData;
-  newTask.id = params.id;
+const addTask = async newTask => {
   return Task.create(newTask);
 };
 
-const getTaskById = async id => {
-  return Task.findById(id);
+const getTaskById = async (body, params) => {
+  const task = Task.findOne({ _id: params.id, boardId: params.boardId });
   //   const task = allTasks.find(item => item.id === id);
-  //   if (!task) {
-  //     throw new UserError(404, 'Task not found');
-  //   }
-  //   return task;
+  if (!task) {
+    throw new UserError(404, 'Task not found');
+  }
+  return task;
 };
 
 const updateTask = async (params, taskData) => {
@@ -40,14 +38,17 @@ const deleteTask = async params => {
 };
 
 const cleanUpUser = async userId => {
-  const tasksToUpdate = await allTasks.filter(item => item.userId === userId);
-  tasksToUpdate.map(item => Object.assign(item, { userId: null }));
-  return true;
+  return Task.update({ userId }, { userId: null });
+
+  //   const tasksToUpdate = await allTasks.filter(item => item.userId === userId);
+  //   tasksToUpdate.map(item => Object.assign(item, { userId: null }));
+  //   return true;
 };
 
 const creanUpBoard = async id => {
-  const tasksToDelete = await allTasks.filter(item => item.boardId === id);
-  await tasksToDelete.map(item => deleteTask(item));
+  return Task.deleteOne({ boardId: id });
+  //   const tasksToDelete = await allTasks.filter(item => item.boardId === id);
+  //   await tasksToDelete.map(item => deleteTask(item));
 };
 
 module.exports = {
