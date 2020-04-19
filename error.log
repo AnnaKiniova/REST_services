@@ -1,0 +1,6 @@
+{"level":"error","date":"2020-04-19T12:43:50.260Z","message":"Unhandled Exception : TypeError: user.save is not a function"}
+{"level":"error","date":"2020-04-19T13:00:11.863Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
+{"level":"error","date":"2020-04-19T13:03:49.289Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
+{"level":"error","date":"2020-04-19T13:04:29.504Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
+{"level":"error","date":"2020-04-19T13:05:27.982Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
+{"level":"error","date":"2020-04-19T13:06:31.537Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
