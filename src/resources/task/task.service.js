@@ -4,7 +4,7 @@ const Task = require('./task.model');
 
 const getAll = params => taskRepo.getAll(params);
 
-const getTaskById = (body, params) => taskRepo.getTaskById(body, params);
+const getTaskById = params => taskRepo.getTaskById(params);
 
 const createTask = async (body, params) => {
   const newTask = new Task(body);

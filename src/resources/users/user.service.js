@@ -18,8 +18,8 @@ const updateUser = (id, userData) => {
 };
 
 const deleteUser = async id => {
-  await taskRepo.cleanUpUser(id);
-  return usersRepo.deleteUser(id);
+  await usersRepo.deleteUser(id);
+  return taskRepo.cleanUpUser(id);
 };
 
 module.exports = {

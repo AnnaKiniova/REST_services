@@ -11,7 +11,7 @@ const addTask = async newTask => {
   return Task.create(newTask);
 };
 
-const getTaskById = async (body, params) => {
+const getTaskById = async params => {
   const task = Task.findOne({ _id: params.id, boardId: params.boardId });
   //   const task = allTasks.find(item => item.id === id);
   if (!task) {

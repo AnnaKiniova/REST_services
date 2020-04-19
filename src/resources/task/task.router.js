@@ -32,7 +32,7 @@ router
   .route('/:id')
   .get(
     asyncWrap(async (req, res) => {
-      const requiredTask = await taskService.getTaskById(req.body, req.params);
+      const requiredTask = await taskService.getTaskById(req.params);
       // console.log(req.params);
       res.status(200).json(Task.toResponse(requiredTask));
     })
@@ -48,7 +48,8 @@ router
   )
   .delete(
     asyncWrap(async (req, res) => {
-      if (!(await taskService.deleteTask(req.params))) {
+      const task = await taskService.deleteTask(req.params);
+      if (!task) {
         throw new UserError(404, 'Task not found');
       }
       res.status(204).end('The task has been deleted');
