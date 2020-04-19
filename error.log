@@ -4,3 +4,111 @@
 {"level":"error","date":"2020-04-19T13:04:29.504Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
 {"level":"error","date":"2020-04-19T13:05:27.982Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
 {"level":"error","date":"2020-04-19T13:06:31.537Z","message":"Unhandled Rejection : TypeError: Cannot read property 'map' of null"}
+{"level":"error","date":"2020-04-19T14:46:42.571Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T14:48:12.526Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T14:51:27.045Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T14:52:41.419Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T14:56:27.498Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T17:09:24.157Z","message":"Unhandled Exception : TypeError: Cannot read property 'boardId' of null"}
+{"level":"error","date":"2020-04-19T17:18:02.437Z","message":"Unhandled Exception : TypeError: Cannot read property 'boardId' of null"}
+{"level":"error","date":"2020-04-19T18:59:30.842Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T18:59:30.844Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T18:59:30.851Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T18:59:30.852Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T18:59:30.853Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T18:59:52.847Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:34.300Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:34.305Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:34.305Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:34.306Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:34.307Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:42.453Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:42.461Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:42.462Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:42.463Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:00:42.464Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:13.060Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:13.062Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:13.063Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:13.069Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:13.070Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:55.819Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:55.820Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:55.820Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:55.824Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:01:55.825Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:02:59.837Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:02:59.839Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:02:59.846Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:02:59.847Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:02:59.849Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:18:48.439Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:18:48.443Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:18:48.444Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:18:48.444Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:18:48.445Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:19:21.974Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:19:21.977Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:19:21.977Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:19:21.978Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:19:21.978Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:20:07.341Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:20:07.345Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:20:07.346Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:20:07.347Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:20:07.348Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:21:53.512Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:21:53.512Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:21:53.513Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:21:53.516Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:21:53.516Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:23:21.793Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:23:21.796Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:23:21.797Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:23:21.797Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:23:21.797Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:24:27.214Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:24:27.216Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:24:27.216Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:24:27.220Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:24:27.221Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:38:27.692Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:38:27.698Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:38:27.698Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:38:27.699Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:38:27.700Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:39:28.291Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:39:28.298Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:39:28.299Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:39:28.300Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:39:28.301Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:41:01.896Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T19:41:02.007Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:41:02.008Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:41:02.012Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:41:02.014Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T19:41:02.015Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:00:01.887Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:00:45.429Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:03:20.763Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:03:39.190Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:03:45.946Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T20:03:46.053Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:03:46.054Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:03:46.059Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:03:46.060Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:03:46.060Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:04:20.120Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:04:25.691Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T20:04:25.784Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:04:25.786Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:04:25.786Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:04:25.786Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:04:25.786Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:05:26.318Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T20:05:34.386Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T20:05:34.489Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:05:34.490Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:05:34.490Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:05:34.493Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T20:05:34.494Z","statusCode":404,"description":"Task not found"}

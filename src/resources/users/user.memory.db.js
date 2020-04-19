@@ -20,14 +20,14 @@ const getUserById = async id => {
 };
 
 const updateUser = async (id, userData) => {
-  return User.updateOne({ _id: id, ...userData });
+  return User.updateOne({ _id: id }, userData);
   // const updatedUser = await getUserById(id);
   // Object.assign(updatedUser, userData);
   // return updatedUser;
 };
 
 const deleteUser = async id => {
-  return User.deleteOne({ _id: id });
+  return (await User.deleteOne({ _id: id })).deletedCount;
   // const index = allUsers.findIndex(item => item.id === id);
   // if (index === -1) {
   //   throw new UserError(404, 'User not found');

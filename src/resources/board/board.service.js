@@ -1,12 +1,12 @@
-const boardRepo = require('./board.memory.repository');
-const Board = require('./board.model');
+const boardRepo = require('./board.db');
+// const Board = require('./board.model');
 const taskRepo = require('../task/task.memory.repository');
 
 const getAll = () => boardRepo.getAll();
 
 const createBoard = boardData => {
-  const newBoard = new Board(boardData);
-  return boardRepo.addBoard(newBoard);
+  // const newBoard = new Board(boardData);
+  return boardRepo.addBoard(boardData);
 };
 
 const getBoardById = id => {

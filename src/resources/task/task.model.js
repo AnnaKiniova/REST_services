@@ -34,11 +34,6 @@ const taskSchema = new mongoose.Schema(
   { versionKey: false }
 );
 
-// taskSchema.statics.toResponse = user => {
-//   const { id, name, login } = user;
-//   return { id, name, login };
-// };
-
 const Task = mongoose.model('Task', taskSchema);
 
 module.exports = Task;

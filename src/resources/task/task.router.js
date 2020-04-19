@@ -40,7 +40,6 @@ router
       if (Object.keys(req.body).length === 0) {
         throw new UserError(400, 'Bad request');
       }
-
       const newTask = await taskService.updateTask(req.params, req.body);
       res.status(200).json(newTask);
     })
