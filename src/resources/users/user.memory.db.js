@@ -1,7 +1,9 @@
 const path = require('path');
-const User = require(path.join(__dirname, './user.model'));
+const HttpStatus = require('http-status-codes');
 
+const User = require(path.join(__dirname, './user.model'));
 const { UserError } = require(path.join(__dirname, '../../errorHandler'));
+
 const ENTITY_NAME = 'user';
 
 const getAll = async () => {
@@ -15,7 +17,7 @@ const addUser = async newUser => {
 const getUserById = async id => {
   const user = await User.findOne({ _id: id });
   if (!user) {
-    throw new UserError(404, `${ENTITY_NAME} not found`);
+    throw new UserError(HttpStatus.NOT_FOUND, `${ENTITY_NAME} not found`);
   }
   return user;
 };

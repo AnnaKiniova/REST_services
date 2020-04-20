@@ -1,6 +1,9 @@
 const path = require('path');
+const HttpStatus = require('http-status-codes');
+
 const { UserError } = require(path.join(__dirname, '../../errorHandler'));
 const Task = require(path.join(__dirname, './task.model'));
+
 const ENTITY_NAME = 'task';
 
 const getAll = async params => {
@@ -14,7 +17,7 @@ const addTask = async newTask => {
 const getTaskById = async params => {
   const task = await Task.findOne({ _id: params.id, boardId: params.boardId });
   if (!task) {
-    throw new UserError(404, `${ENTITY_NAME} not found`);
+    throw new UserError(HttpStatus.NOT_FOUND, `${ENTITY_NAME} not found`);
   }
   return task;
 };

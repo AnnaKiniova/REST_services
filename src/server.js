@@ -1,9 +1,9 @@
-const { PORT } = require('./common/config');
-// const { MONGO_CONNECTION_STRING } = require('./common/config');
-// const mongoose = require('mongoose');
-const { connectDB } = require('./common/db.start');
+const path = require('path');
 
-const app = require('./app');
+const { PORT } = require(path.join(__dirname, './common/config'));
+const { connectDB } = require(path.join(__dirname, './common/db.start'));
+
+const app = require(path.join(__dirname, './app'));
 
 connectDB(() => {
   app.listen(PORT, () =>

@@ -1,5 +1,6 @@
 // eslint-disable-next-line node/no-unpublished-require
 const { createLogger, format, transports } = require('winston');
+const path = require('path');
 
 const logger = createLogger({
   level: 'info',
@@ -7,12 +8,12 @@ const logger = createLogger({
   transports: [
     // new transports.Console(),
     new transports.File({
-      filename: 'error.log',
+      filename: path.join(__dirname, './log/error.log'),
       level: 'error',
       format: format.json()
     }),
     new transports.File({
-      filename: 'info.log',
+      filename: path.join(__dirname, './log/info.log'),
       level: 'info',
       format: format.json()
     })

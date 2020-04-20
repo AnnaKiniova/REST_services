@@ -1,8 +1,9 @@
-const { MONGO_CONNECTION_STRING } = require('./config');
 const mongoose = require('mongoose');
-// const users = require('../resources/users/users.json');
-const User = require('../resources/users/user.model');
-const Board = require('../resources/board/board.model');
+const path = require('path');
+
+const { MONGO_CONNECTION_STRING } = require(path.join(__dirname, './config'));
+const User = require(path.join(__dirname, '../resources/users/user.model'));
+const Board = require(path.join(__dirname, '../resources/board/board.model'));
 
 const users = [
   new User({ name: 'user1', login: 'login1', password: 'password1' }),
@@ -45,9 +46,9 @@ const connectDB = callback => {
   });
   const db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error: '));
-  db.once('open', () => {
+  db.once('open', async () => {
     console.log('db is connected');
-    db.dropDatabase();
+    await db.dropDatabase();
     users.forEach(user => user.save());
     boards.forEach(board => board.save());
     callback();
