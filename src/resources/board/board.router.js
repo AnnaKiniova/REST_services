@@ -23,7 +23,6 @@ router
       }
       const newBoard = await boardService.createBoard(req.body);
       if (newBoard) {
-        console.log('ok');
         res
           .status(200)
           .json(Board.toResponse(newBoard))
@@ -52,7 +51,6 @@ router
   .delete(
     asyncWrap(async (req, res) => {
       const board = await boardService.deleteBoard(req.params.id);
-      console.log(`boards: ${board}`);
       if (!board) {
         throw new UserError(404, 'Task not found');
       }

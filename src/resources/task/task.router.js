@@ -50,7 +50,6 @@ router
   .delete(
     asyncWrap(async (req, res) => {
       const task = await taskService.deleteTask(req.params);
-      console.log(task.deletedCount);
       if (!task.deletedCount) {
         throw new UserError(404, 'Task not found');
       }
