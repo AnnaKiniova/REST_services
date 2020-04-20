@@ -7,6 +7,9 @@ const usersService = require(path.join(__dirname, './user.service'));
 
 const asyncWrap = require(path.join(__dirname, '../../async_wrap'));
 const { UserError } = require(path.join(__dirname, '../../errorHandler'));
+
+const ENTITY_NAME = 'user';
+
 router
   .route('/')
   .get(async (req, res) => {
@@ -46,8 +49,14 @@ router
 
   .delete(
     asyncWrap(async (req, res) => {
-      await usersService.deleteUser(req.params.id);
-      res.status(HttpStatus.NO_CONTENT).json('The user has been deleted');
+      const deletedUser = await usersService.deleteUser(req.params.id);
+      if (!deletedUser) {
+        throw new UserError(HttpStatus.NOT_FOUND, `${ENTITY_NAME} not found`);
+      }
+
+      res
+        .status(HttpStatus.NO_CONTENT)
+        .json(`The ${ENTITY_NAME} has been deleted`);
     })
   );
 module.exports = router;
