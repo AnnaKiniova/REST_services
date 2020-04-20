@@ -1,13 +1,13 @@
-const taskRepo = require('./task.memory.repository');
-
-const Task = require('./task.model');
+const path = require('path');
+const taskRepo = require(path.join(__dirname, './task.db'));
+const Task = require(path.join(__dirname, './task.model'));
 
 const getAll = params => taskRepo.getAll(params);
 
-const getTaskById = id => taskRepo.getTaskById(id);
+const getTaskById = params => taskRepo.getTaskById(params);
 
-const createTask = (taskData, params) => {
-  const newTask = new Task(taskData);
+const createTask = async (body, params) => {
+  const newTask = new Task(body);
   newTask.boardId = params.boardId;
   return taskRepo.addTask(newTask);
 };

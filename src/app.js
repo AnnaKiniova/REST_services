@@ -2,14 +2,24 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
+const HttpStatus = require('http-status-codes');
 
-const userRouter = require('./resources/users/user.router');
-const boardRouter = require('./resources/board/board.router');
-const taskRouter = require('./resources/task/task.router');
-const logger = require('./logger');
+const userRouter = require(path.join(
+  __dirname,
+  './resources/users/user.router'
+));
+const boardRouter = require(path.join(
+  __dirname,
+  './resources/board/board.router'
+));
+const taskRouter = require(path.join(
+  __dirname,
+  './resources/task/task.router'
+));
+const logger = require(path.join(__dirname, './logger'));
 
-const { handleError } = require('./errorHandler');
-const { UserError } = require('./errorHandler');
+const { handleError } = require(path.join(__dirname, './errorHandler'));
+const { UserError } = require(path.join(__dirname, './errorHandler'));
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -41,11 +51,12 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-app.use((err, req, res) => {
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
   logger.processError(err);
   res
-    .status(500)
-    .send(err.message)
+    .sendStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    .json(err.message)
     .end();
 });
 

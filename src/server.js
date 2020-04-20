@@ -1,6 +1,12 @@
-const { PORT } = require('./common/config');
-const app = require('./app');
+const path = require('path');
 
-app.listen(PORT, () =>
-  console.log(`App is running on http://localhost:${PORT}`)
-);
+const { PORT } = require(path.join(__dirname, './common/config'));
+const { connectDB } = require(path.join(__dirname, './common/db.start'));
+
+const app = require(path.join(__dirname, './app'));
+
+connectDB(() => {
+  app.listen(PORT, () =>
+    console.log(`App is running on http://localhost:${PORT}`)
+  );
+});

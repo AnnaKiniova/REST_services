@@ -1,12 +1,10 @@
-const usersRepo = require('./user.memory.repository');
-const taskRepo = require('../task/task.memory.repository');
-const User = require('./user.model');
+const usersRepo = require('./user.memory.db');
+const taskRepo = require('../task/task.db');
 
 const getAll = () => usersRepo.getAll();
 
 const createUser = userData => {
-  const newUser = new User(userData);
-  return usersRepo.addUser(newUser);
+  return usersRepo.addUser(userData);
 };
 const getUserById = id => usersRepo.getUserById(id);
 
