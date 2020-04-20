@@ -1,2 +1,0 @@
-{"level":"error","date":"2020-04-20T08:11:45.205Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
-{"level":"error","date":"2020-04-20T08:12:46.585Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
