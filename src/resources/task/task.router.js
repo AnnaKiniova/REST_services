@@ -8,13 +8,15 @@ const { UserError } = require('../../errorHandler');
 
 router
   .route('/')
-  .get(async (req, res) => {
-    const tasks = await taskService.getAll(req.params);
-    res
-      .status(200)
-      .json(tasks.map(Task.toResponse))
-      .end();
-  })
+  .get(
+    asyncWrap(async (req, res) => {
+      const tasks = await taskService.getAll(req.params);
+      res
+        .status(200)
+        .json(tasks.map(Task.toResponse))
+        .end();
+    })
+  )
   .post(
     asyncWrap(async (req, res) => {
       if (Object.keys(req.body).length === 0) {
@@ -33,7 +35,6 @@ router
   .get(
     asyncWrap(async (req, res) => {
       const requiredTask = await taskService.getTaskById(req.params);
-      // console.log(req.params);
       res.status(200).json(Task.toResponse(requiredTask));
     })
   )
@@ -49,7 +50,8 @@ router
   .delete(
     asyncWrap(async (req, res) => {
       const task = await taskService.deleteTask(req.params);
-      if (!task) {
+      console.log(task.deletedCount);
+      if (!task.deletedCount) {
         throw new UserError(404, 'Task not found');
       }
       res.status(204).end('The task has been deleted');

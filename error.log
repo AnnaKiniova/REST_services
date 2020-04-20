@@ -268,3 +268,58 @@
 {"level":"error","date":"2020-04-19T21:54:33.889Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
 {"level":"error","date":"2020-04-19T21:54:48.579Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
 {"level":"error","date":"2020-04-19T21:54:54.033Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T21:58:47.892Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T21:58:58.463Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:00:19.402Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:00:44.864Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:00:55.686Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:02:50.824Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:03:13.009Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:03:19.372Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:04:05.275Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:04:12.059Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:05:51.425Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:06:02.232Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:07:09.320Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:08:12.132Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:08:41.363Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:09:51.991Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:10:01.389Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:14:51.329Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:15:15.892Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:15:25.378Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:15:33.952Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:16:41.493Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:16:46.997Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T22:16:47.390Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T22:16:47.880Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:16:48.622Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T22:16:48.624Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-19T22:16:54.673Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:17:07.839Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:17:19.002Z","statusCode":404,"description":"Board not found"}
+{"level":"error","date":"2020-04-19T22:20:15.244Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:21:11.841Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:22:03.904Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:22:31.558Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:23:10.596Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:23:44.677Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:26:51.894Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:27:48.652Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:29:26.691Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:30:23.724Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:31:57.444Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:32:12.696Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:33:28.789Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:33:48.114Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:33:55.435Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:35:59.323Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-19T22:36:26.974Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:18:08.576Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:18:48.163Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-20T06:20:51.444Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:21:00.489Z","statusCode":404,"description":"Task not found"}
+{"level":"error","date":"2020-04-20T06:21:37.595Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:21:40.542Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:21:43.679Z","message":"Unhandled Rejection : MongoError: user is not allowed to do action [dropDatabase] on [test.]"}
+{"level":"error","date":"2020-04-20T06:22:02.255Z","statusCode":404,"description":"Task not found"}
