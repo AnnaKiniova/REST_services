@@ -1,5 +1,6 @@
-const boardRepo = require('./board.db');
-const taskRepo = require('../task/task.db');
+const path = require('path');
+const boardRepo = require(path.join(__dirname, './board.db'));
+const taskRepo = require(path.join(__dirname, '../task/task.db'));
 
 const getAll = () => boardRepo.getAll();
 

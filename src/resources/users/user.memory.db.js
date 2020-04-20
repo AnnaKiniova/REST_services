@@ -1,4 +1,8 @@
-const User = require('./user.model');
+const path = require('path');
+const User = require(path.join(__dirname, './user.model'));
+
+const { UserError } = require(path.join(__dirname, '../../errorHandler'));
+const ENTITY_NAME = 'user';
 
 const getAll = async () => {
   return User.find({});
@@ -9,7 +13,11 @@ const addUser = async newUser => {
 };
 
 const getUserById = async id => {
-  return User.findOne({ _id: id });
+  const user = await User.findOne({ _id: id });
+  if (!user) {
+    throw new UserError(404, `${ENTITY_NAME} not found`);
+  }
+  return user;
 };
 
 const updateUser = async (id, userData) => {

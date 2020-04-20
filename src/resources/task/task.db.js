@@ -1,5 +1,7 @@
-const { UserError } = require('../../errorHandler');
-const Task = require('./task.model');
+const path = require('path');
+const { UserError } = require(path.join(__dirname, '../../errorHandler'));
+const Task = require(path.join(__dirname, './task.model'));
+const ENTITY_NAME = 'task';
 
 const getAll = async params => {
   return Task.find({ boardId: params.boardId });
@@ -12,7 +14,7 @@ const addTask = async newTask => {
 const getTaskById = async params => {
   const task = await Task.findOne({ _id: params.id, boardId: params.boardId });
   if (!task) {
-    throw new UserError(404, 'Task not found');
+    throw new UserError(404, `${ENTITY_NAME} not found`);
   }
   return task;
 };

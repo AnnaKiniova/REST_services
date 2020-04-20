@@ -1,6 +1,6 @@
-const taskRepo = require('./task.db');
-
-const Task = require('./task.model');
+const path = require('path');
+const taskRepo = require(path.join(__dirname, './task.db'));
+const Task = require(path.join(__dirname, './task.model'));
 
 const getAll = params => taskRepo.getAll(params);
 

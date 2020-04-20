@@ -1,9 +1,10 @@
 const router = require('express').Router();
-const boardService = require('./board.service');
-const Board = require('./board.model');
+const path = require('path');
+const boardService = require(path.join(__dirname, './board.service'));
+const Board = require(path.join(__dirname, './board.model'));
 
-const asyncWrap = require('../../async_wrap');
-const { UserError } = require('../../errorHandler');
+const asyncWrap = require(path.join(__dirname, '../../async_wrap'));
+const { UserError } = require(path.join(__dirname, '../../errorHandler'));
 
 router
   .route('/')

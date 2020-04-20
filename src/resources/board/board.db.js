@@ -1,5 +1,7 @@
-const { UserError } = require('../../errorHandler');
-const Board = require('./board.model');
+const path = require('path');
+const { UserError } = require(path.join(__dirname, '../../errorHandler'));
+const Board = require(path.join(__dirname, './board.model'));
+const ENTITY_NAME = 'board';
 
 const getAll = async () => {
   return Board.find({});
@@ -12,7 +14,7 @@ const addBoard = async boardData => {
 const getBoardById = async id => {
   const boards = await Board.findOne({ _id: id });
   if (!boards) {
-    throw new UserError(404, 'Board not found');
+    throw new UserError(404, `${ENTITY_NAME} not found`);
   }
   return boards;
 };

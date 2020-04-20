@@ -1,10 +1,11 @@
 /* eslint-disable callback-return */
+const path = require('path');
 const router = require('express').Router({ mergeParams: true });
-const taskService = require('./task.service');
-const Task = require('./task.model');
 
-const asyncWrap = require('../../async_wrap');
-const { UserError } = require('../../errorHandler');
+const taskService = require(path.join(__dirname, './task.service'));
+const Task = require(path.join(__dirname, './task.model'));
+const asyncWrap = require(path.join(__dirname, '../../async_wrap'));
+const { UserError } = require(path.join(__dirname, '../../errorHandler'));
 
 router
   .route('/')
