@@ -1,1 +1,13 @@
 {"level":"error","date":"2020-04-20T12:57:37.693Z","message":"Unhandled Exception : Error: listen EADDRINUSE: address already in use :::4000"}
+{"level":"error","date":"2020-04-26T07:53:33.013Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T07:53:33.217Z","statusCode":404,"description":"board 66764a04-b4ec-4095-8b5d-a7a5c1204628 not found"}
+{"level":"error","date":"2020-04-26T07:53:33.696Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T07:53:33.700Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T07:53:33.702Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T07:53:33.705Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T07:53:33.740Z","statusCode":404,"description":"task not found"}
+{"level":"error","date":"2020-04-26T08:04:46.127Z"}
+{"level":"error","date":"2020-04-26T08:13:05.588Z"}
+{"level":"error","date":"2020-04-26T08:13:32.974Z"}
+{"level":"error","date":"2020-04-26T09:47:01.325Z","statusCode":400,"description":"Bad request"}
+{"level":"error","date":"2020-04-26T19:07:37.622Z","message":"Unhandled Rejection : Error: data and hash arguments required"}

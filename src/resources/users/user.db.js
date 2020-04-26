@@ -22,6 +22,14 @@ const getUserById = async id => {
   return user;
 };
 
+const getUserByName = async userName => {
+  const user = await User.findOne({ name: userName });
+  if (!user) {
+    throw new UserError(HttpStatus.NOT_FOUND, `${ENTITY_NAME} not found`);
+  }
+  return user;
+};
+
 const updateUser = async (id, userData) => {
   return User.updateOne({ _id: id }, userData);
 };
@@ -30,4 +38,11 @@ const deleteUser = async id => {
   return (await User.deleteOne({ _id: id })).deletedCount;
 };
 
-module.exports = { getAll, addUser, getUserById, updateUser, deleteUser };
+module.exports = {
+  getAll,
+  addUser,
+  getUserById,
+  updateUser,
+  deleteUser,
+  getUserByName
+};

@@ -3,6 +3,10 @@ const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
 const HttpStatus = require('http-status-codes');
+const { loginCheck, getToken } = require(path.join(
+  __dirname,
+  './utils/jwsAuth'
+));
 
 const userRouter = require(path.join(
   __dirname,
@@ -38,9 +42,11 @@ app.use('/', (req, res, next) => {
 
 app.use('*', logger.processRequests);
 
-app.use('/users', userRouter);
-app.use('/boards', boardRouter);
-app.use('/boards/:boardId/tasks', taskRouter);
+app.use('/users', loginCheck, userRouter);
+app.use('/boards', loginCheck, boardRouter);
+app.use('/boards/:boardId/tasks', loginCheck, taskRouter);
+
+app.use('/login', getToken);
 
 app.use((err, req, res, next) => {
   if (err instanceof UserError) {
