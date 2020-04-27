@@ -4,14 +4,8 @@ const path = require('path');
 const { MONGO_CONNECTION_STRING } = require(path.join(__dirname, './config'));
 // mock data to test
 
-// const User = require(path.join(__dirname, '../resources/users/user.model'));
 // const Board = require(path.join(__dirname, '../resources/board/board.model'));
 // const Task = require(path.join(__dirname, '../resources/task/task.model'));
-
-// const users = [
-//   new User({ name: 'admin', login: 'admin', password: 'admin' }),
-//   new User({ name: 'user', login: 'user', password: 'user' })
-// ];
 
 // const boards = [
 //   new Board({
@@ -69,10 +63,8 @@ const connectDB = callback => {
   db.on('error', console.error.bind(console, 'connection error: '));
   db.once('open', async () => {
     console.log('db is connected');
-    // await db.dropDatabase();
     // mock data to test
 
-    // users.forEach(user => user.save());
     // boards.forEach(board => board.save());
     // tasks.forEach(task => task.save());
     callback();
