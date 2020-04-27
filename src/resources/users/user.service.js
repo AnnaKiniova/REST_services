@@ -22,20 +22,8 @@ const encryptPassword = async plainPassword => {
 };
 
 const checkPassword = async (user, password) => {
-  console.log(`###user: ${user},  password: ${password}`);
   const match = await bcrypt.compare(password, user.password);
   return match;
-
-  // const match = await new Promise((resolve, reject) =>
-  //   bcrypt.compare(password, user.password, (err, result) => {
-  //     console.log(err);
-  //     if (err) reject(err);
-  //     else resolve(result);
-  //   })
-  // );
-  // console.log('----++');
-  // console.log(match);
-  // return match;
 };
 
 const createUser = async userData => {

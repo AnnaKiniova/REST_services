@@ -10,31 +10,28 @@ const { checkPassword } = require('../resources/users/user.service');
 
 const userRepo = require('../resources/users/user.db');
 
-const validateLogin = req => {
-  if (!req.body.login || !req.body.password) {
-    console.log('error in get token - no login');
-    throw new UserError(
-      HttpStatus.UNAUTHORIZED,
-      'Login or password is missing'
-    );
-  }
-};
+// const validateLogin = req => {
+//   if (!(req.body.login && req.body.password)) {
+//     console.log('error in get token - no login');
+//     throw new UserError(
+//       HttpStatus.UNAUTHORIZED,
+//       'Login or password is missing'
+//     );
+//   }
+//   return true;
+// };
 
-const getToken = async (req, res) => {
-  validateLogin(req);
-
+const getToken = async req => {
   const user = await userRepo.getUserByLogin(req.body.login);
   if (user) {
     const isPasswordValid = await checkPassword(user, req.body.password);
-    console.log(`is Password valid: ${isPasswordValid}`);
+    if (!isPasswordValid) {
+      throw new UserError(HttpStatus.UNAUTHORIZED, 'Wrong password');
+    }
     const payload = { id: user.id, login: user.login };
-    console.log(payload);
-    const token = jwt.sign(payload, JWT_SECRET_KEY);
-    console.log(token);
-    res.send({ token });
-  } else {
-    throw new UserError(HttpStatus.NOT_FOUND, 'Login or password is missing');
+    return jwt.sign(payload, JWT_SECRET_KEY);
   }
+  throw new UserError(HttpStatus.NOT_FOUND, 'User not found');
 };
 
 const loginCheck = async (req, res, next) => {
