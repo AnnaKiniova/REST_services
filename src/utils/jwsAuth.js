@@ -8,36 +8,55 @@ const { checkPassword } = require('../resources/users/user.service');
 // // const router = require('express').Router();
 // const HttpStatus = require('http-status-codes');]
 
-const userRepo = require(path.join(__dirname, '../resources/users/user.db'));
+const userRepo = require('../resources/users/user.db');
+
+const validateLogin = req => {
+  if (!req.body.login || !req.body.password) {
+    console.log('error in get token - no login');
+    throw new UserError(
+      HttpStatus.UNAUTHORIZED,
+      'Login or password is missing'
+    );
+  }
+};
 
 const getToken = async (req, res) => {
-  console.log(req.body.name);
-  if (!req.body.name) {
-    throw new UserError(HttpStatus.BAD_REQUEST, 'No data entered');
+  validateLogin(req);
+
+  const user = await userRepo.getUserByLogin(req.body.login);
+  if (user) {
+    const isPasswordValid = await checkPassword(user, req.body.password);
+    console.log(`is Password valid: ${isPasswordValid}`);
+    const payload = { id: user.id, login: user.login };
+    console.log(payload);
+    const token = jwt.sign(payload, JWT_SECRET_KEY);
+    console.log(token);
+    res.send({ token });
+  } else {
+    throw new UserError(HttpStatus.NOT_FOUND, 'Login or password is missing');
   }
-  const user = await userRepo.getUserByName(req.body.name);
-  const isPasswordValid = await checkPassword(user, req.body.password);
-  console.log(isPasswordValid);
-  const payload = req.body.password;
-  console.log(payload);
-  const token = jwt.sign(payload, JWT_SECRET_KEY);
-  console.log(token);
-  res.send({ token });
 };
 
 const loginCheck = async (req, res, next) => {
-  const token = req.headers['x-access-token'];
-  // const user = await userRepo.getUserByName(req.body.name);
-
+  const token = req.header('Authorization');
   if (token) {
-    jwt.verify(token, JWT_SECRET_KEY, err => {
-      if (err) {
-        res.status(HttpStatus.FORBIDDEN);
-        throw new Error(HttpStatus.FORBIDDEN, '');
-      }
-      next();
-    });
+    const tokenSplitted = token.replace('Bearer ', '');
+    if (tokenSplitted) {
+      jwt.verify(tokenSplitted, JWT_SECRET_KEY, err => {
+        if (err) {
+          // res.status(HttpStatus.UNAUTHORIZED);
+          throw new Error(
+            HttpStatus.UNAUTHORIZED,
+            'Access token is missing or invalid'
+          );
+        }
+        next();
+      });
+    }
+  } else {
+    res
+      .status(HttpStatus.UNAUTHORIZED, 'Access token is missing or invalid')
+      .send();
   }
 };
-
 module.exports = { loginCheck, getToken };

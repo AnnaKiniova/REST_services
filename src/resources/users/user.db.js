@@ -22,11 +22,8 @@ const getUserById = async id => {
   return user;
 };
 
-const getUserByName = async userName => {
-  const user = await User.findOne({ name: userName });
-  if (!user) {
-    throw new UserError(HttpStatus.NOT_FOUND, `${ENTITY_NAME} not found`);
-  }
+const getUserByLogin = async userLogin => {
+  const user = await User.findOne({ login: userLogin });
   return user;
 };
 
@@ -44,5 +41,5 @@ module.exports = {
   getUserById,
   updateUser,
   deleteUser,
-  getUserByName
+  getUserByLogin
 };
